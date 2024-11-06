@@ -1,0 +1,67 @@
+   /* nav bar start */
+/* Styling for fixed navbar within section */
+.fixed-navbar {
+  position: fixed;
+  top: 0; /* Adjust as needed */
+  left: 0; /* Adjust as needed */
+  width: 100%; /* Occupy full width of the viewport */
+  z-index: 1000; /* Ensure the navbar stays above other content */
+}
+
+.navbar{
+    background: linear-gradient(to right, #FF671F, #FFFFFF, #046A38);
+    height: 80px;
+    margin: 20px;
+    border-radius: 18px;
+    padding: 0.5rem;
+    display: flex;
+}
+
+.read-more-btn{
+  decoration: none;
+    background-color: #087bff;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button {
+    background-color: #087bff;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button2 {
+    background-color: #087bff;
+    color: #007bff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover {
+    background-color: #0056b3;
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
