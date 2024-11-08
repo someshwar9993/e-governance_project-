@@ -88,11 +88,20 @@
 
 /* Login Section */
 .login-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Makes the section take the full viewport height */
-    background-color: #f2f4f8;
+  padding: 152px 20px;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .login-container {
@@ -260,7 +269,6 @@ footer {
 .additional-links a:hover {
     text-decoration: underline;
 }
-
 
 .footer-note {
     font-size: 13px;
