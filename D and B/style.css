@@ -1,4 +1,4 @@
-   /* nav bar start */
+/* nav bar start */
 /* Styling for fixed navbar within section */
 .fixed-navbar {
   position: fixed;
@@ -64,6 +64,28 @@
 .nav-link:hover, .nav-link.active {
     color: #000;
 }
+@media (min-width:991px){
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    display: flex;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+}
+/* nav bar end */
+
 /* Login Section */
 .login-section {
     display: flex;
@@ -157,3 +179,105 @@ button:hover {
 }
 /* Login Section end */
 
+/* about Section end */
+        .about-section {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f2f4f8;
+            min-height: 100vh;
+        }
+
+        .content-box {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+
+        .content-box h1 {
+            color: #2c4e8a;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .content-box h2 {
+            font-size: 18px;
+            color: #2c4e8a;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content-box p {
+            color: #333;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+/* about Section end */
+
+/* footer Section */
+footer {
+    background: linear-gradient(to right, #1e6378, #1f7c8b);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-section img {
+    height: 40px;
+    width: auto;
+}
+
+.links,
+.additional-links {
+    margin: 10px 0;
+}
+
+.links a,
+.additional-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+.links a:hover,
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+.update-info {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.footer-note {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.copyright {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.update-time {
+    font-weight: bold;
+}
+
+/* footer Section end */
