@@ -261,10 +261,6 @@ footer {
     text-decoration: underline;
 }
 
-.update-info {
-    font-size: 13px;
-    margin: 10px 0;
-}
 
 .footer-note {
     font-size: 13px;
@@ -276,8 +272,5 @@ footer {
     margin: 10px 0;
 }
 
-.update-time {
-    font-weight: bold;
-}
 
 /* footer Section end */
