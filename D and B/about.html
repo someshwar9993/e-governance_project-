@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birth & Death Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="shortcut icon" href="img/55.ico" type="x-icon">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font Awesome End -->
+
+    <!-- bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <!-- Add AOS Library for animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- End bootstrap-->
+
+</head>
+<body>
+
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand me-auto" href="#"><img src="img\logo.png" alt="logo" style="height: 65px;"></a>
+<!--  ../index.html"-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand me-auto" href="#"><img src="img\logo.png" alt="logo" style="height: 65px;"></a></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">About CRS</a>
+          </li>
+
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            RBD Act and Model Rules
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/rbd_act_1969.pdf" target="_blank">RBD Act, 1969</a></li>
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/Births_and_Deaths_Rules_2024.pdf" target="_blank">RBD (Amendment) Act, 2023</a></li>
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/Births_and_Deaths_Rules_1999.pdf" target="_blank">Model RBD Rules, 1999</a></li>
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/rbd_act_2024.pdf" target="_blank">Model RBD (Amendment) Rules, 2024</a></li>
+          </ul>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Forms
+          </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/all_forms_CRS_2019_new.pdf"target="_blank" >CRS</a></li>
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/MCCD_Form.pdf" target="_blank">MCCD</a></li>
+          </ul>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           FAQS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/FAQ_of_CRS_Latest.pdf" target="_blank" >CRS Procedural</a></li>
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/Procedure_for_B_&_D_Registration.pdf" target="_blank">Requisite Documents</a></li>
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/Procedure_for_B_&_D_Registration.pdf" target="_blank">Trobleshooting</a></li>
+            <li><a class="dropdown-item" href="https://dc.crsorgi.gov.in/assets/download/Procedure_for_B_&_D_Registration.pdf" target="_blank">Training Video</a></li>
+          </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="https://dc.crsorgi.gov.in/assets/download/Procedure_for_B_&_D_Registration.pdf" target="_blank">How To Apply</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="book.html" class="login-button">Login</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- about Section   -->
+    <section class="about-section">
+        <div class="content-box">
+            <br> <br> <br>
+            <h1>Civil Registration System (CRS)</h1>
+            <p>
+                <strong>Civil Registration System (CRS)</strong>, popularly known as birth and death registration system, is the recording of vital events i.e. Birth, Death & Still Birth under the statutory provisions on continuous and permanent basis. CRS falls under the Concurrent list of the Constitution of India at Sl. No. 30. Vital statistics generated from civil registration significantly contribute to the formulation of effective and efficient evidence-based policy across multiple sectors.
+            </p>
+            <p>
+                The registration of birth and death is done under the provisions of a central Act namely Registration of Births and Deaths (RBD) Act, 1969 (amended in 2023) and State Rules framed on the basis of Model RBD Rules, 1999 and Model RBD (Amendment) Rules, 2024. This Act was enacted in the year 1969 and was enforced in most of the States/UTs from 1st April, 1970 to promote uniformity and comparability in the registration of Births and Deaths across the country. Further, the Registration of Births and Deaths (Amendment) Act, 2023 came into force with effect from 01st October, 2023.
+            </p>
+            <p>
+                Under the provisions of RBD Act, 1969, the registration of birth and death is mandatory. The events of births, still births and deaths are registered at the place of occurrence of the event i.e where the event took place. The normal period of reporting the event is 21 days from its occurrence, however, the event can be registered after the normal period under delayed registration provisions of Section 13 of the RBD Act.
+            </p>
+            <h2>REGISTRATION FUNCTIONARIES:</h2>
+            <p>
+                The Registrar General of India (RGI) at the Central level coordinates and unifies the activities of registration throughout the country and at the same time allowing enough scope for the State Governments to evolve an efficient system of registration suited to the characteristics of the respective administration and notify rules. As per the provisions of the Act, the contemporary system is implemented by State Governments/UT Administrations. Accordingly, the State authority (Chief Registrar) has been declared as the chief executive authority in the respective State for implementing the provisions of this Act, Rules and order framed thereunder. Similarly, the District Registrar for each district within the State is responsible for carrying into execution the provision of RBD Act and Rules in respective district. At lowest level, the Registrars are responsible for registering the events occurred in his/her area of jurisdiction and issue certificates of birth and death, as the case may be.
+            </p>
+            <h2>Medical Certification of Cause of Death (MCCD)</h2>
+            <p>
+                The age, sex and cause-specific mortality rates are important indicators for evidence-based monitoring of health trends in the population. The statistics on causes of death is essential for planners, administrators and medical professionals in undertaking appropriate curative and preventive measures for various health problems. It also plays an important role in furtherance of medical research and is fundamental for monitoring as well as improving the methods of diagnosis and analysis.
+            </p>
+            <p>
+                Certification of Cause of Death (MCCD) – an integral part of the Vital Statistics System, aims at providing a reliable and temporal database for generating cause-specific mortality statistics. The Office of the Registrar General, India, (ORGI) obtains data on causes of death from the Chief Registrar of Births and Deaths of different States and Union Territories, under the Registration of Births & Deaths Act, 1969 (amended in 2023).
+            </p>
+            <p>
+                The RBD (Amendment) Act, 2023 makes it mandatory for all medical institutions to provide a certificate as to the cause of death to the Registrar and a copy of the same to the nearest relative. The medical practitioner, attending to the deceased during his recent illness, provides a certificate of cause of death, including the history of illness, in the prescribed format (Form 4 for institutional/ hospital deaths and 4A for the non-institutional deaths) to the concerned Registrar or to the person required under this Act to give information concerning the death for onward transmission to the Registrar.
+            </p>
+        </div>
+    </section>
+<!-- about Section end  -->
+
+<!-- Footer Section -->
+<footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <img src="img/foot1.png">
+                <img src="img/indiagov.jpg">
+                <img src="img/pmindia.png">
+                <img src="img/makeinindia.png">
+                <img src="img/digitalindia.jpg">
+                <img src="img/mygov.png">
+            </div>
+            <div class="links">
+                <a href="#">Website Policy</a> |
+                <a href="#">Mobile App Privacy Policy</a> |
+                <a href="#">Terms & Conditions</a> |
+                <a href="#">Accessibility Statement</a> |
+                <a href="#">Web Information Manager</a>
+            </div>
+            <div class="additional-links">
+                <a href="#">Feedback</a> |
+                <a href="#">Sitemap</a> |
+                <a href="#">Contact Us</a> |
+                <a href="#">Vacancies</a> |
+                <a href="#">Product & Services</a> |
+                <a href="#">Pricing</a> |
+                <a href="#">Cancellation Policy</a> |
+                <a href="#">Grievance Management Policy</a>
+            </div>
+            <div class="update-info">
+                Last Updated: 30-01-2024 12:16:17
+            </div>
+            <div class="footer-note">
+                Website Developed & Maintained by Office of the Registrar General & Census Commissioner, India
+            </div>
+            <div class="copyright">
+                © 2024 - The Registrar General & Census Commissioner, India
+            </div>
+        </div>
+    </footer>
+<!-- Footer Section end -->
+
+</body>
+</html>
