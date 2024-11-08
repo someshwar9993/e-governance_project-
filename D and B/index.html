@@ -61,7 +61,57 @@
   </div>
 </nav>
 <!-- nav bar End-->
+</body>  
+<!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Welcome Back!</h2>
+                <form onsubmit="return validateCaptcha(event)" method="post">
+                    <label for="userID">UserID</label>
+                    <input type="text" id="userID" name="userID" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <div class="captcha">
+                        <span id="captchaExpression"></span> =
+                        <input type="text" id="captchaInput" placeholder="Enter Result" required>
+                    </div>
+
+                    <button type="submit">LOGIN</button>
+                </form>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+        </div>
+    </section>
+    <!-- Login Section end -->
+
 </body>
+    <script>
+        // Generate a random arithmetic problem for captcha
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            document.getElementById("captchaExpression").textContent = `${num1} + ${num2}`;
+            return num1 + num2;
+        }
+
+        // Store the correct answer for validation
+        let correctAnswer = generateCaptcha();
+
+        // Validate the captcha on form submission
+        function validateCaptcha(event) {
+            const userAnswer = parseInt(document.getElementById("captchaInput").value, 10);
+            if (userAnswer !== correctAnswer) {
+                alert("Incorrect captcha answer. Please try again.");
+                correctAnswer = generateCaptcha(); // Generate a new captcha if the answer is wrong
+                event.preventDefault(); // Prevent form submission
+                return false;
+            }
+            return true; // Allow form submission if the answer is correct
+        }
+    </script>
   <script>
     // Initialize AOS Library
     AOS.init();
